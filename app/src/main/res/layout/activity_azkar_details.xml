@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#3CBDA5"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Morning"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+    <!-- Zikr Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvZikr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="هنا هيكون نص الذكر"
+                android:textColor="#222222"
+                android:textSize="22sp"
+                android:lineSpacingExtra="8dp"
+                android:textDirection="rtl"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/tvSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Source"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <!-- Previous -->
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Previous"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#3CBDA5"
+            android:textSize="14sp" />
+
+
+        <!-- Count -->
+        <Button
+            android:id="@+id/btnCount"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="3"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#3CBDA5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <!-- Next -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#3CBDA5"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

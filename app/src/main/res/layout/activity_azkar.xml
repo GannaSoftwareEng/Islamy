@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#3CBDA5"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Back -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Azkar"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Empty space to keep title centered -->
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <!-- Categories -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <GridLayout
+            android:id="@+id/categoriesGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <!-- Tasbeeh -->
+            <LinearLayout
+                android:id="@+id/cardTasbeeh"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/azkar_card">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="☝"
+                    android:textSize="26sp"
+                    android:textColor="#3CBDA5"
+                    android:background="@drawable/azkar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Tasbeeh"
+                    android:textColor="#222222"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- After Prayer -->
+            <LinearLayout
+                android:id="@+id/cardAfterPrayer"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/azkar_card">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="☪"
+                    android:textSize="26sp"
+                    android:textColor="#3CBDA5"
+                    android:background="@drawable/azkar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="After prayer"
+                    android:textColor="#222222"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Before Sleep -->
+            <LinearLayout
+                android:id="@+id/cardBeforeSleep"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/azkar_card">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="🛏"
+                    android:textSize="24sp"
+                    android:background="@drawable/azkar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Before sleep"
+                    android:textColor="#222222"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Morning -->
+            <LinearLayout
+                android:id="@+id/cardMorning"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/azkar_card">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="☀"
+                    android:textSize="26sp"
+                    android:textColor="#3CBDA5"
+                    android:background="@drawable/azkar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Morning"
+                    android:textColor="#222222"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Daily -->
+            <LinearLayout
+                android:id="@+id/cardDaily"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/azkar_card">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="▣"
+                    android:textSize="24sp"
+                    android:textColor="#3CBDA5"
+                    android:background="@drawable/azkar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Daily"
+                    android:textColor="#222222"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Duaa -->
+            <LinearLayout
+                android:id="@+id/cardDuaa"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/azkar_card">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="🤲"
+                    android:textSize="24sp"
+                    android:background="@drawable/azkar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Duaa"
+                    android:textColor="#222222"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Evening -->
+            <LinearLayout
+                android:id="@+id/cardEvening"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/azkar_card">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="☾"
+                    android:textSize="28sp"
+                    android:textColor="#3CBDA5"
+                    android:background="@drawable/azkar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Evening"
+                    android:textColor="#222222"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>
