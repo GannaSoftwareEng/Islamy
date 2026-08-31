@@ -8,63 +8,36 @@
     android:layout_height="match_parent"
     android:background="#F5FAF8">
 
-    <!-- Welcome text -->
+    <!-- Azkar Card -->
+
+
     <TextView
-        android:id="@+id/tvWelcome"
-        android:layout_width="wrap_content"
+        android:id="@+id/splashIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_azkar"
+        android:gravity="center"
+        android:text="☾"
+        android:textColor="#267E6F"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/splashTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Islamy"
         android:textColor="#267E6F"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp" />
 
-    <!-- Azkar Card -->
-    <LinearLayout
-        android:id="@+id/btnAzkar"
-        android:layout_width="280dp"
-        android:layout_height="150dp"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="@drawable/main_azkar_card"
-        android:elevation="6dp"
-        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="100dp">
+        app:layout_constraintTop_toBottomOf="@+id/splashIcon" />
 
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:text="☾"
-            android:textSize="32sp"
-            android:textColor="#267E6F"
-            android:background="@drawable/ic_azkar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Azkar"
-            android:textColor="#267E6F"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Morning • Evening • Daily"
-            android:textColor="#777777"
-            android:textSize="12sp" />
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

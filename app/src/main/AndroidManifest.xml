@@ -20,7 +20,7 @@
             android:windowSoftInputMode="adjustResize">
         </activity>
         <activity
-        android:name=".AzkarHome"
+        android:name=".SplashScreenActivity"
         android:exported="true"
         android:windowSoftInputMode="adjustResize">
         <intent-filter>
@@ -37,8 +37,6 @@
             android:name=".AzkarDetailsActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
         <activity
             android:name=".QiblaActivity"
             android:exported="false"
