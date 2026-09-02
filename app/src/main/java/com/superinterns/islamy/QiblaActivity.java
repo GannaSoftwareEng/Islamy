@@ -1,12 +1,14 @@
 package com.superinterns.islamy;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +32,7 @@ public class QiblaActivity extends AppCompatActivity implements SensorEventListe
     private boolean hasGeomagnetic = false;
     private double[] location = new double[2];
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 100;
+    ImageView arrowright;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,11 @@ public class QiblaActivity extends AppCompatActivity implements SensorEventListe
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         magnetometer = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
         requestLocationPermission();
+        arrowright = findViewById(R.id.arrow_right);
+        arrowright.setOnClickListener(v -> {
+            startActivity(new Intent(this,HomePage.class));
+        });
+
     }
 
     @Override

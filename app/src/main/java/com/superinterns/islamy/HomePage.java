@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class HomePage extends AppCompatActivity {
 
     LinearLayout lnQibla ;
+    LinearLayout androidblock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,15 @@ public class HomePage extends AppCompatActivity {
         lnQibla.setOnClickListener(v -> {
             startActivity(new Intent(this,QiblaActivity.class));
         });
+
+        androidblock = findViewById(R.id.azkarblock);
+        androidblock.setOnClickListener(v -> {
+            startActivity(new Intent(this,AzkarActivity.class));
+        });
+
+
+
+
     }
 
 
