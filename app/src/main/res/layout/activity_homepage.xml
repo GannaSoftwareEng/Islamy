@@ -36,6 +36,7 @@
             >
 
             <TextView
+                android:id="@+id/prayerNameText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Asr"
@@ -44,6 +45,7 @@
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/prayerTimeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3:49 PM"
@@ -65,9 +67,10 @@
                     app:srcCompat="@drawable/location"/>
 
                 <TextView
+                    android:id="@+id/locationText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dubai, United Arab Emirates"
+                    android:text="Locating..."
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:textColor="#89909A" />

@@ -41,6 +41,7 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     implementation("com.google.android.gms:play-services-location:21.3.0")
     implementation("com.batoulapps.adhan:adhan2:0.0.6")
+    implementation(libs.kotlinx.coroutines.android)
 
 
 }
