@@ -51,5 +51,10 @@ object HomePrayerHelper {
         val tomorrowComponents = DateComponents(tomorrow.year, tomorrow.monthValue, tomorrow.dayOfMonth)
         val tomorrowTimes = PrayerTimes(coordinates, tomorrowComponents, params)
         return UpcomingPrayer("Fajr", formatter.format(tomorrowTimes.fajr.asDate()))
+
+
+
+
+        
     }
 }
