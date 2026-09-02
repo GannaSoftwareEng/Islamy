@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+
+    <!-- Sun -->
+    <path
+        android:fillColor="#F9D65C"
+        android:pathData="M40,40m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0" />
+
+    <!-- Sun rays -->
+    <path
+        android:strokeColor="#F9D65C"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M40,8 L40,16
+                          M40,64 L40,72
+                          M8,40 L16,40
+                          M64,40 L72,40
+                          M17,17 L23,23
+                          M57,57 L63,63
+                          M63,17 L57,23
+                          M23,57 L17,63" />
+
+</vector>

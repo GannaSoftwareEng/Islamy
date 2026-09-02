@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:orientation="vertical"
+    android:background="#3CBDA5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Prayers"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sat, 19 Feb"
+            android:textColor="#E8FFF9"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp" />
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/sun"
+        android:contentDescription="Sunrise" />
+
+
+
+        <!-- Fajr -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/prayer_card"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="☾"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="Fajr"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fajrTime"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="5:32 AM"
+                android:textColor="#CDEFE7"
+                android:textSize="15sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="✓"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:background="@drawable/check_circle" />
+
+        </LinearLayout>
+
+
+    <!-- Dhuhr -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/prayer_card"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="☀"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dhuhr"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="4dp"
+                />
+
+            <TextView
+                android:id="@+id/dhuhrTime"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="12:33 PM"
+                android:textColor="#CDEFE7"
+                android:textSize="15sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="✓"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:background="@drawable/check_circle" />
+
+        </LinearLayout>
+
+        <!-- Asr -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/prayer_card"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="☀"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Asr"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:id="@+id/asrTime"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="3:49 PM"
+                android:textColor="#CDEFE7"
+                android:textSize="15sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="✓"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:background="@drawable/check_circle" />
+
+        </LinearLayout>
+
+        <!-- Maghrib -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/prayer_card"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="☾"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Maghrib"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:id="@+id/maghribTime"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="6:15 PM"
+                android:textColor="#CDEFE7"
+                android:textSize="15sp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="✓"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:background="@drawable/check_circle" />
+
+
+        </LinearLayout>
+
+        <!-- Isha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/prayer_card"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="☾"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Isha"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:id="@+id/ishaTime"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="7:45 PM"
+                android:textColor="#CDEFE7"
+                android:textSize="15sp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="✓"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:background="@drawable/check_circle" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

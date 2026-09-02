@@ -41,6 +41,12 @@
             android:name=".QiblaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.islamy.PrayerActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
     </application>
 
 </manifest>

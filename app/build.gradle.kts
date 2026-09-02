@@ -39,6 +39,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
-//    implementation("com.batoulapps.adhan:adhan2:0.0.7")
     implementation("com.google.android.gms:play-services-location:21.3.0")
+    implementation("com.batoulapps.adhan:adhan2:0.0.6")
+
+
 }

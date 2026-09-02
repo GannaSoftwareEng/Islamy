@@ -10,12 +10,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.islamy.PrayerActivity;
 
 
 public class HomePage extends AppCompatActivity {
 
     LinearLayout lnQibla ;
     LinearLayout androidblock;
+    LinearLayout salahBlockln;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,11 @@ public class HomePage extends AppCompatActivity {
         androidblock = findViewById(R.id.azkarblock);
         androidblock.setOnClickListener(v -> {
             startActivity(new Intent(this,AzkarActivity.class));
+        });
+
+        salahBlockln = findViewById(R.id.salahBlock);
+        salahBlockln.setOnClickListener(v -> {
+            startActivity(new Intent(this, PrayerActivity.class));
         });
 
 
